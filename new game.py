@@ -108,6 +108,7 @@ while vida > 0 and vida_goblin > 0:
 # Resultado
 if vida > 0:
     print("Você venceu!")
+    print("voce ficou com", vida, "de vida restante!")
 else:
     print("Você perdeu!")
     
