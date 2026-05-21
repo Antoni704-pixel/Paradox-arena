@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main(void) {
+    char vet[10];
+    char cons[10];
+    int i, k = 0;
+
+    printf("Digite 10 caracteres (enter após cada um ou separados por espaço):\n");
+    for (i = 0; i < 10; i++) {
+        if (scanf(" %c", &vet[i]) != 1) return 0;
+    }
+
+    for (i = 0; i < 10; i++) {
+        char c = vet[i];
+        char lower = tolower((unsigned char)c);
+        if (isalpha((unsigned char)c) && !(lower == 'a' || lower == 'e' || lower == 'i' || lower == 'o' || lower == 'u')) {
+            cons[k++] = c;
+        }
+    }
+
+    printf("Quantidade de consoantes: %d\n", k);
+    if (k > 0) {
+        printf("Consoantes: ");
+        for (i = 0; i < k; i++) {
+            printf("%c", cons[i]);
+            if (i < k - 1) printf(" ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}

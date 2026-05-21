@@ -1,0 +1,13 @@
+# Programa para ler 10 números reais e exibir na ordem inversa
+
+numeros = []
+
+for i in range(10):
+    num = float(input(f"Digite o número {i+1}: "))
+    numeros.append(num)
+
+print("\nNúmeros na ordem inversa:")
+for i in range(len(numeros) - 1, -1, -1):
+    print(numeros[i])
+
+    

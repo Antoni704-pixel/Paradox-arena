@@ -1,0 +1,18 @@
+# faça um progrma que peça as 4 notas de 10 alunos, calcule e armazene num vetor a
+# media de cada aluno, impprima o numero de alinos com media maior ou igual a 7
+medias = []
+for i in range(10):
+    print(f'Aluno {i+1}:')
+    nota1 = float(input("Digite a 1ª nota: "))
+    nota2 = float(input("Digite a 2ª nota: "))
+    nota3 = float(input("Digite a 3ª nota: "))
+    nota4 = float(input("Digite a 4ª nota: "))
+    media = (nota1 + nota2 + nota3 + nota4) / 4
+    medias.append(media)
+
+alunos_aprovados = 0
+for media in medias:
+    if media >= 7:
+        alunos_aprovados += 1
+
+print(f'Número de alunos com média maior ou igual a 7: {alunos_aprovados}')
