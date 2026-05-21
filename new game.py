@@ -280,4 +280,8 @@ escrever(f"  Vida restante: {vida}/{vida_max}")
 escrever(f"  XP total:      {xp}")
 print("╔══════════════════════════════════════╗")
 print("║         OBRIGADO POR JOGAR!          ║")
+<<<<<<< HEAD
 print("╚══════════════════════════════════════╝")
+=======
+print("╚══════════════════════════════════════╝")
+>>>>>>> a4403d2bcd46949576c0afa46c89e6a9fc4f7f78
